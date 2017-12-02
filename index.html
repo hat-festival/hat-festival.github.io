@@ -1,0 +1,26 @@
+---
+---
+
+<h1>EMF Camp 2018</h1>
+<h2>Coming soon...</h2>
+
+<div id='members'>
+  <p>We are:</p>
+  <ul class='list-inline' id='attendees'></ul>
+</div>
+
+<script>
+// via http://jsfiddle.net/C6LPY/2/
+$(function() {
+  var members = [
+    {% for member in site.data.members %}
+      '<li><a href="{{ member.url }}">{{ member.name }}</a></li> ',
+    {% endfor %}
+  ]
+
+  while (members.length) {
+    m = members.splice(Math.floor(Math.random() * members.length), 1)[0]
+    $('#members ul').append(m);
+  }
+})
+</script>

@@ -8,18 +8,38 @@
 
 @import 'footer';
 @import 'nav';
-//@import 'github-corner';
+
+body {
+  font-family: $font-primary;
+}
 
 body, .footer {
   background-color: $brand-secondary-1;
 }
 
-h1, h2 {
+h1, h2, #members {
   text-align: center;
   color: $brand-primary;
-  font-family: $font-primary;
 }
 
 .footer {
-  font-size: 2em;
+  color: $brand-primary;
+  font-family: $font-secondary;
+  font-size: 1em;
+  i {
+    font-size: 1.2em;
+  }
+  a {
+    color: $brand-secondary-2;
+  }
+}
+
+#members {
+  a {
+    color: $brand-secondary-2;
+  }
+  a:hover {
+    text-decoration: none;
+  }
+  margin-top: 100px;
 }

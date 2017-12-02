@@ -13,3 +13,5 @@ fonts:
     url:  //maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css
   - name: ranchers
     url:  //fonts.googleapis.com/css?family=Press+Start+2P
+  - name: open-sans
+    url:  //fonts.googleapis.com/css?family=Open+Sans
