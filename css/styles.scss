@@ -1,0 +1,25 @@
+---
+---
+@import 'variables';
+@import 'colours';
+@import 'fonts';
+
+@import 'bootstrap';
+
+@import 'footer';
+@import 'nav';
+//@import 'github-corner';
+
+body, .footer {
+  background-color: $brand-secondary-1;
+}
+
+h1, h2 {
+  text-align: center;
+  color: $brand-primary;
+  font-family: $font-primary;
+}
+
+.footer {
+  font-size: 2em;
+}
